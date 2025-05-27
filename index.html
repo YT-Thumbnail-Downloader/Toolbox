@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube Tools</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>YouTube Tools</h1>
+
+  <!-- Title Generator -->
+  <section>
+    <h2>Video Title Generator</h2>
+    <input type="text" id="titleTopic" placeholder="Enter a topic" />
+    <button onclick="generateTitles()">Generate Titles</button>
+    <ul id="titleResults"></ul>
+  </section>
+
+  <!-- Earnings Estimator -->
+  <section>
+    <h2>YouTube Earnings Estimator</h2>
+    <input type="text" id="videoURL" placeholder="Paste YouTube video URL" />
+    <input type="number" id="views" placeholder="Estimated views" />
+    <button onclick="estimateEarnings()">Estimate</button>
+    <p id="earningsResult"></p>
+  </section>
+
+  <!-- Hashtag Generator -->
+  <section>
+    <h2>Hashtag Generator</h2>
+    <input type="text" id="hashtagInput" placeholder="Enter a keyword" />
+    <button onclick="generateHashtags()">Generate Hashtags</button>
+    <p id="hashtagOutput"></p>
+  </section>
+
+  <!-- Thumbnail Downloader -->
+  <section>
+    <h2>YouTube Thumbnail Downloader</h2>
+    <input type="text" id="thumbURL" placeholder="Paste YouTube video URL" />
+    <button onclick="getThumbnail()">Get Thumbnail</button>
+    <div id="thumbnailResult"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
